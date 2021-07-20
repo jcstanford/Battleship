@@ -1,0 +1,15 @@
+/Users/colinstanford/Desktop/VSCode/battleship/obj/Debug/net5.0/battleship.csproj.AssemblyReference.cache
+/Users/colinstanford/Desktop/VSCode/battleship/obj/Debug/net5.0/battleship.GeneratedMSBuildEditorConfig.editorconfig
+/Users/colinstanford/Desktop/VSCode/battleship/obj/Debug/net5.0/battleship.AssemblyInfoInputs.cache
+/Users/colinstanford/Desktop/VSCode/battleship/obj/Debug/net5.0/battleship.AssemblyInfo.cs
+/Users/colinstanford/Desktop/VSCode/battleship/obj/Debug/net5.0/battleship.csproj.CoreCompileInputs.cache
+/Users/colinstanford/Desktop/VSCode/battleship/bin/Debug/net5.0/battleship.deps.json
+/Users/colinstanford/Desktop/VSCode/battleship/bin/Debug/net5.0/battleship.runtimeconfig.json
+/Users/colinstanford/Desktop/VSCode/battleship/bin/Debug/net5.0/battleship.runtimeconfig.dev.json
+/Users/colinstanford/Desktop/VSCode/battleship/bin/Debug/net5.0/battleship.dll
+/Users/colinstanford/Desktop/VSCode/battleship/bin/Debug/net5.0/ref/battleship.dll
+/Users/colinstanford/Desktop/VSCode/battleship/bin/Debug/net5.0/battleship.pdb
+/Users/colinstanford/Desktop/VSCode/battleship/obj/Debug/net5.0/battleship.dll
+/Users/colinstanford/Desktop/VSCode/battleship/obj/Debug/net5.0/ref/battleship.dll
+/Users/colinstanford/Desktop/VSCode/battleship/obj/Debug/net5.0/battleship.pdb
+/Users/colinstanford/Desktop/VSCode/battleship/obj/Debug/net5.0/battleship.genruntimeconfig.cache
