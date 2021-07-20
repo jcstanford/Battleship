@@ -6,6 +6,8 @@ namespace battleship
     {
         static void Main(string[] args)
         {
+            getGameInfo();
+
             // define firm locations for the ship
             // set them random later
             int location1 = 2;
@@ -25,6 +27,22 @@ namespace battleship
             bool isSunk = false;
 
 
+            // while (isSunk == false) {
+            //     // get user input
+
+            // }
+
+
+        }
+
+        static void getGameInfo() {
+            string appName = "Battleship";
+            string appVersion = "1.0.1";
+            string appAuthor = "Colin Stanford with aid from Head First JS book";
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("{0}: Version {1}, by {2}", appName, appVersion, appAuthor);
+            Console.ResetColor();
         }
     }
 }
