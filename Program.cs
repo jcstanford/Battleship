@@ -11,9 +11,12 @@ namespace battleship
 
             // define firm locations for the ship
             // set them random later
-            int location1 = 2;
-            int location2 = 3;
-            int location3 = 4;
+
+            Random random = new Random();
+        
+            int location1 = random.Next(1, 6);
+            int location2 = location1 + 1;
+            int location3 = location2 + 1;
 
             // define a hits variable that will add up when user guesses correctly
             int hits = 0;
