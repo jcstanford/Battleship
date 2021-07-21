@@ -15,9 +15,6 @@ namespace battleship
             int location2 = 3;
             int location3 = 4;
 
-            // define a guess variable that will prompt user input
-            int guess;
-
             // define a hits variable that will add up when user guesses correctly
             int hits = 0;
 
@@ -34,26 +31,36 @@ namespace battleship
 
 
             while (isSunk == false) {
+
+                // define a guess variable that will prompt user input
+                int guess = 0;
+
+                Console.WriteLine("Ready, aim, fire! (Enter a number between 1-6):");
+
                 // get user input
-                Console.WriteLine("Enter a number between 1 and 6: ");
-                guess = Console.ReadLine();
+                string input = Console.ReadLine();
+                // guess = Int32.Parse(input); not necessary here
 
-                if (guess != Int32.TryParse(1, 6)) {
-                    Console.ForegroundColor = ConsoleColor.Red;           
-                    Console.WriteLine("Please enter a valid number (1-6)");
-                    Console.ResetColor();
+                if (!int.TryParse(input, out guess)) {
+                    printColorMessage(ConsoleColor.Red, "Please use a valid number!");
+
+                } else {
+
+                    if (guess == location1 || guess == location2 || guess == location3) {
+                        hits += 1;
+                        printColorMessage(ConsoleColor.Blue, "Hit!");
+
+                        if (hits == 3) {
+                            isSunk = true;
+                            printColorMessage(ConsoleColor.Blue, "You sank my battleship!");
+                        }
+                    }
+                    else {
+                        guesses += 1;
+                        printColorMessage(ConsoleColor.Red, "Miss!");
+                    }
                 }
-
-                if (guess != location1 || guess != location2 || guess != location3) {
-                    Console.ForegroundColor = ConsoleColor.Red;           
-                    Console.WriteLine("MISS! Try again");
-                    guesses = guesses + 1;
-                    Console.ResetColor();
-                }
-
             }
-
-
         }
 
         static void getGameInfo() {
@@ -65,5 +72,11 @@ namespace battleship
             Console.WriteLine("{0}: Version {1}, by {2}", appName, appVersion, appAuthor);
             Console.ResetColor();
         }
+
+        static void printColorMessage(ConsoleColor color, string message) {
+            Console.ForegroundColor = color;
+            Console.WriteLine(message);
+            Console.ResetColor();
+            }
     }
 }
