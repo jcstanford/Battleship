@@ -1,4 +1,4 @@
-## Battleship
+### Battleship
 
 An old board game that has since been made into a virtual chess match. My version is simple and does not have anything fancy yet.
 It is played in one's computer terminal, and has only one ship to sink.
