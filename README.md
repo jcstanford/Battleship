@@ -1,6 +1,6 @@
 ### Battleship
 
-An old board game that has since been made into a virtual chess match. My version is simple and does not have anything fancy yet.
+My version is simple and does not have anything fancy.
 It is played in one's computer terminal, and has only one ship to sink.
 
 My first build of this game was using Javascript with the aid of the "Head First Javascript Programming" book.
